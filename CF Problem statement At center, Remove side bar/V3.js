@@ -7,6 +7,7 @@
 // @grant        none
 // ==/UserScript==
 (function () {
+    var check = false;
     'use strict';
     const sidebar = document.getElementById("sidebar");
     const problemindexholder = document.getElementsByClassName("problemindexholder");
@@ -40,10 +41,15 @@
             for (let j = 0; j < problemindexholder.length; j++) {
                 problemindexholder[j].style.width = "135%";
                 problemindexholder[j].style.margin = "0 auto";
+                check = true;
             }
-            for (let j = 0; j < problemindexholderPC.length; j++) {
-                problemindexholderPC[j].style.width = "95%";
-                problemindexholderPC[j].style.margin = "0 auto";
+            if (!check) {
+                if (currentUrl !== "https://codeforces.com/problemset") {
+                    for (let j = 0; j < problemindexholderPC.length; j++) {
+                        problemindexholderPC[j].style.width = "95%";
+                        problemindexholderPC[j].style.margin = "0 auto";
+                    }
+                }
             }
             body.style.fontSize = "16px";
         }
