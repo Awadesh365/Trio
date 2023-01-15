@@ -10,6 +10,7 @@
     'use strict';
     const sidebar = document.getElementById("sidebar");
     const problemindexholder = document.getElementsByClassName("problemindexholder");
+    const problemindexholderPC = document.getElementsByClassName("content-with-sidebar");
     const body = document.querySelector('body');
     let currentUrl = window.location.href;
 
@@ -39,6 +40,10 @@
             for (let j = 0; j < problemindexholder.length; j++) {
                 problemindexholder[j].style.width = "135%";
                 problemindexholder[j].style.margin = "0 auto";
+            }
+            for (let j = 0; j < problemindexholderPC.length; j++) {
+                problemindexholderPC[j].style.width = "95%";
+                problemindexholderPC[j].style.margin = "0 auto";
             }
             body.style.fontSize = "16px";
         }
