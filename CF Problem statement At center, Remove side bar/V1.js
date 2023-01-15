@@ -3,7 +3,6 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Hide the sidebar and center the problem statement on the Codeforces website
-// @author       You
 // @match        https://codeforces.com/*
 // @grant        none
 // ==/UserScript==
