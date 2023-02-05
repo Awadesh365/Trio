@@ -15,3 +15,4 @@ const randomeClickFunction = function () {
 
 
 }
+htmlBody.onclick = randomeClickFunction;
