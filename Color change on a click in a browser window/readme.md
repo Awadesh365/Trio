@@ -1,0 +1,2 @@
+When a User clicks on his/her browser window, a random color will change, 
+in every click there will be any randome color in the background.
