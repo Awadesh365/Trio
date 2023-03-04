@@ -1,3 +1,3 @@
-# Projects-on-javascript
+# basic js
 
-A collection of 16 Projects On Javascript
+A collection of 3 Projects On Javascript
